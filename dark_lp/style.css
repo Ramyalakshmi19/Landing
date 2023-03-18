@@ -149,12 +149,11 @@ body
 }
 .productive
 {
-
     display:flex;
     flex-wrap:wrap;
     min-width:370px;
     max-width: 90vw;
-    height:100vh;
+    max-height:70vh;
     margin:3%;
 
 }
@@ -184,27 +183,23 @@ body
 .profile
 {
     display:grid;
-    grid-template-columns:25vw 25vw 25vw;
-    gap:7%;
-    margin-left:2%;
-    min-width:380px;
+    min-width:300px;
     max-width:90vw;
-    max-height:50vh;
+    max-height:70vh;
+    gap:5vh 9vw;
+    grid-template-columns:20vw 20vw 20vw;
+    margin:0.5% 3%;
 }
 .prof_grid
 {
-    padding:3%;
+   
+    padding:10%;
+    min-width:300px;
+    width:20vw;
+    max-height:60vh;
+    border-radius:10px;
     border:2px solid #21293C;
-    border-radius:5px;
-    min-width:380px;
-    max-width:25vw;
-    max-height:80vh;
-}
-.prof_text
-{
-    min-width:380px;
-    max-width:20vw;
-    max-height:100vh;
+    background-color:#21293C;
 }
 .profile_pic
 {
@@ -217,17 +212,31 @@ body
 {
     display:flex;
     min-width:380px;
-    max-width:20vw;
+    max-width:15vw;
     max-height:10vh;
+    margin-top:7%;
 }
 .bold
 {
     font-weight:bold;
+} 
+.early_access
+{
+    min-width:380px;
+    max-width:70vw;
+    height:70vh;
+    margin-top:10%;
+    margin-left:10vw;
+    background-color: darkkhaki;
 }
 @media only screen and (max-width:486px)
 {
     .prod_head
     {
         font-size:larger;
+    }
+    .profile
+    {
+        grid-template-columns:auto;
     }
 }
